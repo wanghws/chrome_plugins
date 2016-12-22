@@ -1,0 +1,8 @@
+body{margin:0;padding:0;font-size:12px;}
+dt{padding:10px;}
+i{ font-style:normal;}
+
+/* detail */
+#detail{position:absolute;width:400px;height:200px;border:1px solid #ccc;background:#efefef;display:none;}
+#detail .tit{background:#ddd;display:block;height:33px;cursor:move;}
+#detail .tit i{float:right;line-height:33px;padding:0 8px;cursor:pointer;}

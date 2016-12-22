@@ -1,0 +1,24 @@
+{
+  "name": "商品信息抓取插件",
+  "description": "选品插件",
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*"
+  ],
+  "background": {
+    "page":"background.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "js": ["jquery.min.js","jquery.lightbox_me.js","content.js"]
+    }
+  ],
+  "browser_action": {
+      "default_title": "chrome plugin",
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+  }
+
+}
